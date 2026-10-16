@@ -1,4 +1,4 @@
-# Claude Code (claude-sonnet-5-5)
+# Claude Code + Claude Sonnet 5.5
 
 NIKA's built-in `cli.claude` agent: Claude Code CLI (2.1.280) running in a Docker Sandbox, in two
 phases (diagnosis, then submission), with the release's allowed MCP servers. The model is the
@@ -31,3 +31,17 @@ measure the actual traffic rate. Interpret results for this task with the stale-
 ## Authors
 
 - Alessandro Cornacchia
+
+## Results and reference pricing
+
+All 255 trials contain scored submissions, with no residual infrastructure or
+grading errors. Mean RCA F1 is 73.43%, localization F1 is 76.94%, and detection
+score is 85.10%.
+
+Anthropic released Claude Sonnet 5.5 on 2026-09-28. Its standard API list price
+is USD 2 per million input tokens and USD 10 per million output tokens, retrieved
+2026-10-16 from the [official release page](https://www.anthropic.com/claude-sonnet-5-5).
+The leaderboard uses these rates as a token-price reference for this subscription-
+authenticated run. It does not measure the subscription bill or apply cache discounts.
+
+[Paired trajectories](https://huggingface.co/datasets/Zhihao98/nika-trajectories/tree/main/trajectories/0.2.0/20261016_claude_code_claude_sonnet_5_5).
